@@ -1,6 +1,6 @@
 #include "AqiScale.h"
 
-AqiScale::AqiScale AqiScale()
+AqiScale::AqiScale()
 {
     bon.description = "Bon";
     bon.impact = "La qualité de l’air est considérée comme satisfaisante et la pollution de l’air pose peu ou pas de risque";
