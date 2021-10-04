@@ -11,6 +11,6 @@ struct AqiInfo bon, acceptable, mauvaisGroupeSensible, mauvaisPourSante, tresMau
 
 class AqiScale{
     public: 
-    AqiScale() {}
-    AqiInfo getAQILabelFromPM25(float pm25Value);
+        AqiScale();
+        AqiInfo getAQILabelFromPM25(float pm25Value);
 };

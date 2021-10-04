@@ -1,3 +1,13 @@
 #include "RevolvairWebServer.h"
 
-RevolvairWebServer::RevolvairWebServer(int port){}
+WebServer * server;
+
+RevolvairWebServer::RevolvairWebServer(int port)
+{
+    server = new WebServer(port);
+}
+
+void RevolvairWebServer::handleClient()
+{
+    server->handleClient();
+}

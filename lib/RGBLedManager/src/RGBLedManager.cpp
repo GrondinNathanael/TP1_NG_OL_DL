@@ -1,11 +1,12 @@
 #include "RGBLedManager.h"
 #include "LED.h"
 
-RGBLedManager::RGBLedManager()
+RGBLedManager::RGBLedManager(int pinR, int pinG, int pinB)
 {
     Serial.begin(9600);
     ledcAttachPin(ledR, 1); 
     ledcAttachPin(ledG, 2);
+    ledcAttachPin(ledB, 3);
 }
 
 // NOTE: les couleurs sont présentes pour les tests.

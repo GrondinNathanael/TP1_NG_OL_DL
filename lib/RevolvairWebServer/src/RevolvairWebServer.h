@@ -1,8 +1,11 @@
+#include <WebServer.h>
+
 class RevolvairWebServer
 {
 private:
-    /* data */
+    int serverPort;
 public:
     RevolvairWebServer(int port);
     ~RevolvairWebServer();
+    void handleClient();
 };
