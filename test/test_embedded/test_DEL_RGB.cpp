@@ -1,12 +1,11 @@
 #include "../lib/RGBLedManager/src/RGBLedManager.h"
-#include "../lib/RGBLedManager/src/Color.h"
 #include <unity.h>
 
 RGBLedManager rgb;
-Color red = Color::RED;
-Color orange = Color::ORANGE;
-Color yellow = Color::YELLOW;
-Color green = Color::GREEN;
+LED red = LED::RED;
+LED orange = LED::ORANGE;
+LED yellow = LED::YELLOW;
+LED green = LED::GREEN;
 
 void when_pm25_between_0_and_11_then_getColor_LED_green(void){
     TEST_ASSERT_EQUAL(green, rgb.getColor(9));

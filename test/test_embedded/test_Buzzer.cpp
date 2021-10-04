@@ -13,13 +13,13 @@ void when_pm25_above_20_then_buzzer_ring(void){
 }
 
 void when_pm25_less_than_20_then_cannot_snooze(void){
-    digitalRead(23) == LOW;
+    digitalWrite(23, LOW);
     buzzer.ring(19);
     TEST_ASSERT_EQUAL(true, buzzer.ring(19));
 }
 
 void when_pm25_above_20_then_can_snooze(void){
-    digitalRead(23) == LOW;
+    digitalWrite(23, LOW);
     buzzer.ring(21);
     TEST_ASSERT_EQUAL(false, buzzer.ring(21));
 }

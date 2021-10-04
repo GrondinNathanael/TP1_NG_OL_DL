@@ -1,0 +1,1 @@
+enum LED {GREEN, YELLOW, ORANGE, RED};
