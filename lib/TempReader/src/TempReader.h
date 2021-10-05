@@ -13,6 +13,5 @@ public:
     void loop();
     void readSensor();
     void printData();
-    ~TempReader();
 };
 

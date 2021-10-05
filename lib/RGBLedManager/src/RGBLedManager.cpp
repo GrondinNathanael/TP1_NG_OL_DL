@@ -1,5 +1,4 @@
 #include "RGBLedManager.h"
-#include "LED.h"
 
 RGBLedManager::RGBLedManager(int pinR, int pinG, int pinB)
 {

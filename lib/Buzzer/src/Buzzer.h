@@ -4,6 +4,6 @@ class Buzzer {
         Buzzer();
         bool ring(int nbParticles);
     private:
-        int snoozeCountdown = 0;
+        int snoozeCountdown;
         const int RESET_SNOOZE_COUNTDOWN = 1800000; // millisecondes
 };

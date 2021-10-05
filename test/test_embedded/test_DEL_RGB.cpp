@@ -1,26 +1,26 @@
 #include "../lib/RGBLedManager/src/RGBLedManager.h"
 #include <unity.h>
 
-RGBLedManager rgb;
+RGBLedManager * led = new RGBLedManager(12,13,14);
 LED red = LED::RED;
 LED orange = LED::ORANGE;
 LED yellow = LED::YELLOW;
 LED green = LED::GREEN;
 
 void when_pm25_between_0_and_11_then_getColor_LED_green(void){
-    TEST_ASSERT_EQUAL(green, rgb.getColor(9));
+    TEST_ASSERT_EQUAL(green, led->getColor(9));
 }
 
 void when_pm25_between_12_and_34_then_getColor_LED_yellow(void){
-    TEST_ASSERT_EQUAL(yellow, rgb.getColor(27));
+    TEST_ASSERT_EQUAL(yellow, led->getColor(27));
 }
 
 void when_pm25_between_35_and_54_then_getColor_LED_orange(void){
-    TEST_ASSERT_EQUAL(orange, rgb.getColor(41));
+    TEST_ASSERT_EQUAL(orange, led->getColor(41));
 }
 
 void when_pm25_55_and_over_then_getColor_LED_red(void){
-    TEST_ASSERT_EQUAL(red, rgb.getColor(63));
+    TEST_ASSERT_EQUAL(red, led->getColor(63));
 }
 
 void process() {
